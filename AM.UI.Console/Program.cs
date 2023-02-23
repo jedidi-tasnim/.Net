@@ -41,16 +41,7 @@ using System.Collections.Generic;
 using AM.ApplicationCore.Domain;
 using AM.ApplicationCore.Interfaces;
 
-Personne p = new Personne();
-p.Id = 11;
-p.Nom = "jedidi";
-p.Prenom = "tasnim";
-p.Email = "esprit@gmail.tn";
-p.DateNaissance = new DateTime(2000, 12, 30);
-p.Password = "password";
-p.ConfirmPassword = "password";
-Console.WriteLine(p);
-Personne p1 = new Personne("nom", "prenom", DateTime.Now, "email", "password", "confirmPassword");
+
 
 
 Personne p2 = new Personne()
@@ -63,9 +54,7 @@ Personne p2 = new Personne()
     ConfirmPassword = "confirmPassword"
 };
 
-Conducteur c = new Conducteur(); ;
-p.GetMyType();
-c.GetMyType();
+
 
 //Création d'un objet non initialisé de type Plane
 Plane plane = new Plane();
@@ -109,30 +98,27 @@ foreach (var item in list)
 {
     Console.WriteLine(item);
 }
-//collection des objets génériques
-IList<Plane> planes = new List<Plane>();
-//IList:Ienumerable,Icollection
-//ICollection:IEnumerable
-//IEnumerable: assure le parcour des listes uniquement
-//ICollection: les méthode des parcours et l'insertion(add, remove, recherche ...)
-planes.Add(plane);
-planes.Add(plane2);
-IList<Plane> planes1 = new List<Plane>()
-{
-    plane,plane2,new Plane(){Capacity=12,Planeid=4, ManufactureDate=new DateTime(2022,11,11)}
-};
-Personne p11 = new Personne();
-Console.WriteLine(Personne.nb);
-Personne p22 = new Personne();
-Console.WriteLine(Personne.nb);
-Personne p33 = new Personne();
-Console.WriteLine(Personne.nb);
 
-//TP2
-//5)
-ServiceFlight serviceFlight = new ServiceFlight();
-serviceFlight.Flights = TestData.Flights;
-//6)
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

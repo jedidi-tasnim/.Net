@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\tasnim\\Desktop\\.Net\\EmnaKhanfir-4SE5\\AM.Infrastructure\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\AM.Infrastructure.bundle.scp.css",
+      "PackagePath": "staticwebassets\\AM.Infrastructure.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\tasnim\\Desktop\\.Net\\EmnaKhanfir-4SE5\\AM.Infrastructure\\wwwroot\\background.png",
+      "PackagePath": "staticwebassets\\background.png"
+    },
+    {
+      "Id": "C:\\Users\\tasnim\\Desktop\\.Net\\EmnaKhanfir-4SE5\\AM.Infrastructure\\wwwroot\\exampleJsInterop.js",
+      "PackagePath": "staticwebassets\\exampleJsInterop.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.AM.Infrastructure.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.AM.Infrastructure.props",
+      "PackagePath": "build\\AM.Infrastructure.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.AM.Infrastructure.props",
+      "PackagePath": "buildMultiTargeting\\AM.Infrastructure.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.AM.Infrastructure.props",
+      "PackagePath": "buildTransitive\\AM.Infrastructure.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
