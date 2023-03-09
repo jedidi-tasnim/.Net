@@ -32,8 +32,8 @@ namespace AM.ApplicationCore.Domain
         {
             new Staff()
             {
-                FirstName = "captain",
-                LastName = "captain",
+       //         FirstName = "captain",
+         //       LastName = "captain",
                 EmailAddress="Captain.captain@gmail.com",
                 BirthDate=new DateTime(1965, 01, 01),
                 EmployementDate=new DateTime(1999, 01, 01),
@@ -41,8 +41,8 @@ namespace AM.ApplicationCore.Domain
             },
             new Staff()
             {
-                FirstName = "hostess1",
-                LastName = "hostess1",
+        //        FirstName = "hostess1",
+          //      LastName = "hostess1",
                 EmailAddress="Hostess1.hostess1@gmail.com",
                 BirthDate=new DateTime(1995, 01, 01),
                 EmployementDate=new DateTime(2020, 01, 01),
@@ -50,8 +50,8 @@ namespace AM.ApplicationCore.Domain
             },
             new Staff()
             {
-                FirstName = "hostess2",
-                LastName = "hostess2",
+        //        FirstName = "hostess2",
+         //       LastName = "hostess2",
                 EmailAddress="Hostess2.hostess2@gmail.com",
                 BirthDate=new DateTime(1996, 01, 01),
                 EmployementDate=new DateTime(2020, 01, 01),
@@ -63,8 +63,8 @@ namespace AM.ApplicationCore.Domain
         {
            new Traveller()
            {
-               FirstName="Travaller1",
-               LastName="Travaller1",
+               //FirstName="Travaller1",
+               //LastName="Travaller1",
                EmailAddress="Travaller1.Travaller1@gmail.com",
                BirthDate=new DateTime(1980, 01, 01),
                HealthInformation="No troubles",
@@ -72,8 +72,8 @@ namespace AM.ApplicationCore.Domain
            },
            new Traveller()
            {
-               FirstName="Travaller2",
-               LastName="Travaller2",
+               //FirstName="Travaller2",
+               //LastName="Travaller2",
                EmailAddress="Travaller2.Travaller2@gmail.com",
                BirthDate=new DateTime(1981, 01, 01),
                HealthInformation="Some troubles",
@@ -81,8 +81,8 @@ namespace AM.ApplicationCore.Domain
            },
            new Traveller()
            {
-               FirstName="Travaller3",
-               LastName="Travaller3",
+               //FirstName="Travaller3",
+               //LastName="Travaller3",
                EmailAddress="Travaller3.Travaller3@gmail.com",
                BirthDate=new DateTime(1982, 01, 01),
                HealthInformation="No troubles",
@@ -90,8 +90,8 @@ namespace AM.ApplicationCore.Domain
            },
            new Traveller()
            {
-               FirstName="Travaller4",
-               LastName="Travaller4",
+               //FirstName="Travaller4",
+               //LastName="Travaller4",
                EmailAddress="Travaller4.Travaller4@gmail.com",
                BirthDate=new DateTime(1983, 01, 01),
                HealthInformation="Some troubles",
@@ -99,8 +99,8 @@ namespace AM.ApplicationCore.Domain
            },
            new Traveller()
            {
-               FirstName="Travaller5",
-               LastName="Travaller5",
+               //FirstName="Travaller5",
+               //LastName="Travaller5",
                EmailAddress="Travaller5.Travaller5@gmail.com",
                BirthDate=new DateTime(1984, 01, 01),
                HealthInformation="Some troubles",
@@ -117,7 +117,7 @@ namespace AM.ApplicationCore.Domain
                 EffectiveArrival=new DateTime(2022, 01, 01, 17, 10, 10),
                 plane = planes[1],
                 EstmateDuration="100",
-                passengers=new List<Passenger>(travellers)
+                //passengers=new List<Passenger>(travellers)
             },
             new Flight()
             {

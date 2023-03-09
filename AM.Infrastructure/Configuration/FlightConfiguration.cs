@@ -17,9 +17,9 @@ namespace AM.Infrastructure.Configuration
         {
             builder.HasKey(f => f.FlightId);
             builder.ToTable("MyFlight");
-            builder.Property(j => j.Departure).IsRequired().HasMaxLength(100).HasColumnName("VILLE DE DEPARTURE").HasDefaultValue("Hammamet").HasColumnType("nchar");
+           // builder.Property(j => j.Departure).IsRequired().HasMaxLength(100).HasColumnName("VILLE DE DEPARTURE").HasDefaultValue("Hammamet").HasColumnType("nchar");
             builder.HasOne(f => f.plane).WithMany(p=>p.flights).HasForeignKey(f => f.PlaneFK).OnDelete(DeleteBehavior.SetNull);
-            builder.HasMany(f => f.passengers).WithMany(f => f.flights).UsingEntity(p => p.ToTable("My Reservation"));
+           // builder.HasMany(f => f.passengers).WithMany(f => f.flights).UsingEntity(p => p.ToTable("My Reservation"));
 
         }
     }

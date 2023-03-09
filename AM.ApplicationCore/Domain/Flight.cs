@@ -18,7 +18,8 @@ namespace AM.ApplicationCore.Domain
         public Plane ? plane { get; set; }
         [ForeignKey(nameof(Plane))]
         public int ? PlaneFK { get; set; }
-        public List<Passenger> passengers { get; set; }
+        public List<Ticket> Tickets { get; set; }
+      //  public List<Passenger> passengers { get; set; }
         public override string ToString()
         {
             return (Destination + "\n" +
