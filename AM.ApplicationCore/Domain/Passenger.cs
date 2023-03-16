@@ -26,7 +26,9 @@ namespace AM.ApplicationCore.Domain
         [MinLength(8),MaxLength(8)]
         ///[RegularExpression("[0-9]")] pour max 8(public string)
         public string TelNumber { get; set; }
-        public List<Ticket> Tickets { get; set; }
+        public virtual List<Ticket> Tickets { get; set; }
+        public virtual List<Seat> seats { get; set; }
+        public virtual List<Reservation> reservations { get; set; }
 
         //  public List<Flight> flights { get; set; }
         //   public override string ToString()

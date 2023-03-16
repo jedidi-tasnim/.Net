@@ -14,7 +14,9 @@ namespace AM.ApplicationCore.Domain
         public DateTime ManufactureDate { get; set; }
         public int Planeid { get; set; }
         public PlaneType PlaneType { get; set; }
-        public List<Flight> flights { get; set; }
+        public virtual List<Flight> flights { get; set; }
+        public virtual List<Passenger> Passengers { get; set; }
+        public virtual List<Seat> seats { get; set; }
 
         public override string ToString()
         {

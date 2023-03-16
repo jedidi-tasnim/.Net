@@ -15,10 +15,10 @@ namespace AM.ApplicationCore.Domain
         public int FlightId { get; set; }
         public DateTime EffectiveArrival { get; set; }
         public string EstmateDuration { get; set; }
-        public Plane ? plane { get; set; }
+        public virtual Plane ? plane { get; set; }
         [ForeignKey(nameof(Plane))]
         public int ? PlaneFK { get; set; }
-        public List<Ticket> Tickets { get; set; }
+        public virtual List<Ticket> Tickets { get; set; }
       //  public List<Passenger> passengers { get; set; }
         public override string ToString()
         {

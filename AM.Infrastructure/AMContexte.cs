@@ -16,9 +16,14 @@ namespace AM.Infrastructure
        // public DbSet<Plane> planes { get; set; }
        // public DbSet<Staff> staff { get; set; }
         public DbSet<Traveller> travellers { get; set; }
-       // public DbSet<Test2> test2s { get; set; }
+        // public DbSet<Test2> test2s { get; set; }
+        public DbSet<Seat> seats  { get; set; }
+        public DbSet<Section> sections  { get; set; }
+        public DbSet<Reservation> reservations   { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            optionsBuilder.UseLazyLoadingProxies();
             optionsBuilder.UseSqlServer(@"Data Source=(localDB)\MsSqlLocalDb; initial catalog=TasnimJedidi;Integrated Security=true ");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -29,6 +34,12 @@ namespace AM.Infrastructure
             modelBuilder.Entity<Staff>().ToTable("Staffs");
             modelBuilder.Entity<Traveller>().ToTable("Travellers");
             modelBuilder.ApplyConfiguration(new TicketConfiguration());
+            modelBuilder.ApplyConfiguration(new ReservationConfiguration());
+            modelBuilder.ApplyConfiguration(new SeatConfiguration());
+           
+            
+
+
 
 
         }
